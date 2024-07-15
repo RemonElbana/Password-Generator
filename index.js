@@ -28,7 +28,7 @@ function genPass() {
             let randomIndexTwo = Math.floor(Math.random() * noNumbers.length)
             secondpassEl.innerText += noNumbers[randomIndexTwo]
             console.log(secondpassEl.innerText)    
-    }    
+    } 
     } else if (checkOne.checked === false && checkTwo.checked === true) {
         for ( let i = 0 ; i < passval ; i++) {
             let randomIndexOne = Math.floor(Math.random() * noSympols.length)
