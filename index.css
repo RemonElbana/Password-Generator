@@ -112,7 +112,7 @@ body .pass div i:hover {
     body .pass  .sec2 {
         display: flex;
         justify-content: space-between;
-        width: calc(100% - 20px);
+        width: calc(100% - 0px);
         color: #10B981;
         background-color: #273549;
         border-radius: 5px;
