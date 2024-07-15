@@ -28,9 +28,7 @@ function genPass() {
             let randomIndexTwo = Math.floor(Math.random() * noNumbers.length)
             secondpassEl.innerText += noNumbers[randomIndexTwo]
             console.log(secondpassEl.innerText)    
-        }
-    }
-    else if (checkOne.checked === false && checkTwo.checked === true) {
+    }    } else if (checkOne.checked === false && checkTwo.checked === true) {
         for ( let i = 0 ; i < passval ; i++) {
             let randomIndexOne = Math.floor(Math.random() * noSympols.length)
             firstpassEl.innerText += noSympols[randomIndexOne]
@@ -39,7 +37,7 @@ function genPass() {
             let randomIndexTwo = Math.floor(Math.random() * noSympols.length)
             secondpassEl.innerText += noSympols[randomIndexTwo]
             console.log(secondpassEl.innerText)    
-        }
+    }
     } else if (checkOne.checked === true && checkTwo.checked === true) {
         for ( let i = 0 ; i < passval ; i++) {
             let randomIndexOne = Math.floor(Math.random() * noSympolsOrNumbers.length)
@@ -49,7 +47,7 @@ function genPass() {
             let randomIndexTwo = Math.floor(Math.random() * noSympolsOrNumbers.length)
             secondpassEl.innerText += noSympolsOrNumbers[randomIndexTwo]
             console.log(secondpassEl.innerText)    
-        }
+    }
     } else if (checkOne.checked === false && checkTwo.checked === false) {
         for ( let i = 0 ; i < passval ; i++) {
             let randomIndexOne = Math.floor(Math.random() * characters.length)
@@ -59,7 +57,7 @@ function genPass() {
             let randomIndexTwo = Math.floor(Math.random() * characters.length)
             secondpassEl.innerText += characters[randomIndexTwo]
             console.log(secondpassEl.innerText)    
-        }
+    }
     }
 
 }
