@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    background-color: #1f2937;
+    padding: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body h1:first-child {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+body h1:nth-child(2){
+    color: #10B981;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+}
+body h4 {
+    color: #D5D4D8 ;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+body button {
+    background-color: #10B981;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+body .check1, 
+body .check2 {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+
+body .check1 label ,
+body .check2 label ,
+body .passlength label{
+    color: rgba(255, 255, 255, 0.61);
+    font-size: 15px;
+}
+
+body .passlength label{
+    margin-right: 15px ;
+}
+
+body .passlength input {
+    width: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+body .check1 #noNum-el , 
+body .check2 #noSym-el {
+    accent-color: #10B981 ;
+}
+
+body hr {
+    border:  #4B586A 1px solid;
+    margin: 15px;
+    margin-inline: 0;
+}
+
+body .pass {
+    display: flex;
+    justify-content: space-around;
+}
+
+body .pass .sec1 , 
+body .pass  .sec2 {
+    display: flex;
+    justify-content: space-around;
+    width: calc(50% - 20px);
+    color: #10B981;
+    background-color: #273549;
+    border-radius: 5px;
+    text-align: center;
+    height: 50px;
+}
+
+body .pass div i {
+    align-self: center;
+    margin-right: 10px;
+    color: white;
+}
+
+body .pass div i:hover {
+    color: #10B981;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+@media (max-width: 500px)  {
+
+    body .pass {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    body .pass .sec1 , 
+    body .pass  .sec2 {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 20px);
+        color: #10B981;
+        background-color: #273549;
+        border-radius: 5px;
+        text-align: center;
+        height: 50px;
+    }
+
+    body .pass div p {
+        margin-left: 30px;
+    }
+
+    body .pass div i {
+        align-self: center;
+        margin-right: 30px;
+        color: white;
+    }
+
+}

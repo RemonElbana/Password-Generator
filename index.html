@@ -1,0 +1,45 @@
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <h1>Generate a </h1>
+        <h1>Random password</h1>
+        <h4>Never use an insecure password again.</h4>
+        <div class="choose">
+            <button id="genpass-el" onclick="genPass()" >Generate Passwords</button>
+            <div class="passlength">
+                <label for="passlength">Choose Your Password Length:</label>
+                <input type="number" min="15" max="24" id="passlength" placeholder="">
+            </div>
+            <div class="check1" >
+                <label for="noNum-el" >No Numbers:</label>
+                <input  type="checkbox" name="No Numbers" id="noNum-el"  >    
+            </div>
+            <div class="check2">
+                <label for="noSym-el" >No Sympols:</label>
+                <input  type="checkbox" name="No Sympols" id="noSym-el">    
+            </div>
+        </div>
+        <hr class="hr">
+        <div class="pass">
+            <div class="sec1" >
+                <p id="firstpass-el"></p>
+                <i id="copyIconOne" class="fa-regular fa-copy" ></i>
+            </div>
+            <div class="sec2" >
+                <p id="secondpass-el"></p>
+                <i id="copyIconTwo" class="fa-regular fa-copy" ></i>
+            </div>
+        </div>
+        <div class="copy" >
+            <p id="firstpass-el"></p>
+            <p id="secondpass-el" ></p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
