@@ -13,11 +13,19 @@ let checkOne = document.querySelector("#noNum-el")
 let checkTwo = document.querySelector("#noSym-el")
 let passLengthEl = document.getElementById("passlength")
 
+
 function genPass() {
     
     firstpassEl.innerText = " "
     secondpassEl.innerText = " "
     let passval = passLengthEl.value
+    
+
+    if (passval > 24) {
+        passval = 24
+    } else if ( passval < 15) {
+        passval = 15
+    }
 
     if (checkOne.checked === true && checkTwo.checked === false) {
         for ( let i = 0 ; i < passval ; i++) {
